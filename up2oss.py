@@ -9,7 +9,7 @@
     :license: BSD 3-Clause, see LICENSE for more details.
 """
 
-__version__ = '0.1.4'
+__version__ = '0.1.5'
 __author__ = 'staugur <staugur@saintic.com>'
 __hookname__ = 'up2oss'
 __description__ = '将图片保存到阿里云'
@@ -25,7 +25,7 @@ from utils.tool import slash_join
 
 intpl_localhooksetting = '''
 <div class="layui-col-xs12 layui-col-sm12 layui-col-md6">
-<fieldset class="layui-elem-field">
+<fieldset class="layui-elem-field layui-field-title">
     <legend>阿里云对象存储OSS（{% if "up2oss" in g.site.upload_includes %}使用中{% else %}未使用{% endif %}）</legend>
     <div class="layui-field-box">
         <div class="layui-form-item">
